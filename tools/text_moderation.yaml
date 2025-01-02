@@ -1,0 +1,26 @@
+identity:
+  name: text_moderation
+  author: fujita-h
+  label:
+    en_US: Text Moderation
+    ja_JP: テキスト モデレーション
+description:
+  human:
+    en_US: Scans text for sexual content, violence, hate, and self harm with multi-severity levels.
+    ja_JP: 性的コンテンツ、暴力、憎悪、自傷行為に関するテキストを複数の重大度レベルでスキャンします。
+  llm: Scans text for sexual content, violence, hate, and self harm with multi-severity levels.
+parameters:
+  - name: input_text
+    type: string
+    required: true
+    label:
+      en_US: Text to scan
+      ja_JP: スキャンするテキスト
+    human_description:
+      en_US: Text to scan
+      ja_JP: スキャンするテキスト
+    llm_description: Text to scan
+    form: llm
+extra:
+  python:
+    source: tools/text_moderation.py

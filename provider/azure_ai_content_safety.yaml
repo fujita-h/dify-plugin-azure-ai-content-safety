@@ -1,0 +1,35 @@
+identity:
+  author: fujita-h
+  name: azure_ai_content_safety
+  label:
+    en_US: Azure AI Content Safety
+  description:
+    en_US: Enhance the safety of generative AI applications with advanced guardrails for responsible AI
+    ja_JP: 責任ある AI に適した高度なガードレールで、生成 AI アプリケーションの安全性を強化
+  icon: 03390-icon-service-Content-Safety.svg
+credentials_for_provider:
+  azure_ai_content_safety_api_endpoint:
+    type: text-input
+    required: true
+    label:
+      en_US: API Endpoint
+      ja_JP: APIエンドポイント
+    placeholder:
+      en_US: Enter your API Endpoint
+      ja_JP: APIエンドポイントを入力
+    url: https://portal.azure.com
+  azure_ai_content_safety_api_key:
+    type: secret-input
+    required: true
+    label:
+      en_US: API Key
+      ja_JP: APIキー
+    placeholder:
+      en_US: Enter your API Key
+      ja_JP: APIキーを入力
+    url: https://portal.azure.com
+tools:
+  - tools/text_moderation.yaml
+extra:
+  python:
+    source: provider/azure_ai_content_safety.py
