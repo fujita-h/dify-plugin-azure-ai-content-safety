@@ -3,7 +3,7 @@ identity:
   author: fujita-h
   label:
     en_US: Text Moderation
-    ja_JP: テキスト モデレーション
+    ja_JP: テキストモデレーション
 description:
   human:
     en_US: Scans text for sexual content, violence, hate, and self harm with multi-severity levels.
