@@ -1,0 +1,26 @@
+identity:
+  name: prompt_shields
+  author: fujita-h
+  label:
+    en_US: Prompt Shields
+    ja_JP: プロンプトシールド
+description:
+  human:
+    en_US: Prompt Shields analyzes LLM input and detects adversarial user input attacks.
+    ja_JP: プロンプトシールドは、LLM 入力を分析し、敵対的なユーザー入力攻撃を検出します。
+  llm: Prompt Shields analyzes LLM input and detects adversarial user input attacks.
+parameters:
+  - name: input_text
+    type: string
+    required: true
+    label:
+      en_US: Prompt to scan
+      ja_JP: スキャンするプロンプト
+    human_description:
+      en_US: Prompt to scan
+      ja_JP: スキャンするプロンプト
+    llm_description: Prompt to scan
+    form: llm
+extra:
+  python:
+    source: tools/prompt_shields.py
