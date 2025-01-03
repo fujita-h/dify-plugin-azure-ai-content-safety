@@ -30,6 +30,7 @@ credentials_for_provider:
     url: https://portal.azure.com
 tools:
   - tools/text_moderation.yaml
+  - tools/image_moderation.yaml
 extra:
   python:
     source: provider/azure_ai_content_safety.py

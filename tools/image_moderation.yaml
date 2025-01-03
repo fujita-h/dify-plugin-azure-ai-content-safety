@@ -1,0 +1,26 @@
+identity:
+  name: image_moderation
+  author: fujita-h
+  label:
+    en_US: Image Moderation
+    ja_JP: 画像モデレーション
+description:
+  human:
+    en_US: Scans text for sexual content, violence, hate, and self harm with multi-severity levels.
+    ja_JP: 性的コンテンツ、暴力、憎悪、自傷行為に関するテキストを複数の重大度レベルでスキャンします。
+  llm: Scans text for sexual content, violence, hate, and self harm with multi-severity levels.
+parameters:
+  - name: input_file
+    type: file
+    required: true
+    label:
+      en_US: Image to scan
+      ja_JP: スキャンする画像
+    human_description:
+      en_US: Image to scan
+      ja_JP: スキャンする画像
+    llm_description: Image to scan
+    form: llm
+extra:
+  python:
+    source: tools/image_moderation.py
