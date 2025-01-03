@@ -18,7 +18,7 @@ class TextModerationTool(Tool):
         api_key = self.runtime.credentials.get("azure_ai_content_safety_api_key")
 
         if not api_endpoint:
-            raise Exception("Azure text endpoint is required")
+            raise Exception("Azure Content Safety endpoint is required")
         if not api_key:
             raise Exception("Azure API key is required")
 
