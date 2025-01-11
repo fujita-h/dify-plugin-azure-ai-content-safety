@@ -10,3 +10,6 @@ sudo chmod +x /usr/local/bin/dify
 if [ -f "requirements.txt" ]; then
   pip3 install --user -r requirements.txt
 fi
+
+# Avoid to create __pycache__ directory
+echo 'export PYTHONDONTWRITEBYTECODE=1' >> ~/.bashrc
