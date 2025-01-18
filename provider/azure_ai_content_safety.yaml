@@ -7,6 +7,8 @@ identity:
     en_US: Enhance the safety of generative AI applications with advanced guardrails for responsible AI
     ja_JP: 責任ある AI に適した高度なガードレールで、生成 AI アプリケーションの安全性を強化
   icon: 03390-icon-service-Content-Safety.svg
+  tags:
+    - utilities
 credentials_for_provider:
   api_endpoint:
     type: text-input
