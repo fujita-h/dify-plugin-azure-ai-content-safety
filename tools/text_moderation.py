@@ -14,8 +14,8 @@ class TextModerationTool(Tool):
         if not self.runtime or not self.runtime.credentials:
             raise Exception("Tool runtime or credentials are missing")
 
-        api_endpoint = self.runtime.credentials.get("azure_ai_content_safety_api_endpoint")
-        api_key = self.runtime.credentials.get("azure_ai_content_safety_api_key")
+        api_endpoint = self.runtime.credentials.get("api_endpoint")
+        api_key = self.runtime.credentials.get("api_key")
 
         if not api_endpoint:
             raise Exception("Azure Content Safety endpoint is required")
